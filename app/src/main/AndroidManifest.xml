@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.gotaxi.driver">
+
+    <permission
+        android:name="com.gotaxi.driver.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.temport.driver.mapfragment.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:name="com.gotaxi.driver.DriverApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:screenOrientation="nosensor"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:usesCleartextTraffic="true">
+
+        <activity
+            android:name="com.gotaxi.driver.Activity.ResetPasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/google_map_api" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.gotaxi.driver.Activity.SplashScreen"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gotaxi.driver.Activity.custom_webview"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.gotaxi.driver.Activity.Profile"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="com.gotaxi.driver.Activity.chat_support"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.gotaxi.driver.Activity.WalletActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.gotaxi.driver.Activity.newlivechat"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name="com.gotaxi.driver.Activity.RegisterActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.gotaxi.driver.Activity.ShowProfile"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.gotaxi.driver.Activity.UploadDocumentActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.gotaxi.driver.Activity.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.gotaxi.driver.Activity.LoginOtpScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.gotaxi.driver.Activity.EditProfile"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.gotaxi.driver.Activity.WaitingForApproval"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.gotaxi.driver.Activity.HistoryDetails"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.gotaxi.driver.Activity.HistoryActivity"
+            android:label="@string/your_trips"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.gotaxi.driver.Activity.WelcomeScreenActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:exported="true">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <data android:scheme="terms" />
+                <data android:scheme="privacy" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.gotaxi.driver.Services.BackgroundLocationUpdateService" />
+
+        <service
+            android:name="com.gotaxi.driver.FCM.MyFirebaseMessagingService"
+            android:directBootAware="true"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- Set custom default icon. This is used when no icon is set for incoming notification messages.
+             See README(https://goo.gl/l4GJaQ) for more. -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_launcher" />
+        <!-- Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more. -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <service
+            android:name="com.gotaxi.driver.Utilities.LocationTracking"
+            android:exported="false" /> <!-- Firebase Notifications Ends -->
+        <activity
+            android:name="com.gotaxi.driver.Activity.ChangePasswordActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.gotaxi.driver.Activity.ActivitySocialLogin"
+            android:screenOrientation="nosensor" />
+
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+        <meta-data
+            android:name="com.facebook.accountkit.ApplicationName"
+            android:value="@string/app_name" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.facebook.accountkit.ClientToken"
+            android:value="@string/ACCOUNT_KIT_CLIENT_TOKEN" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name="com.facebook.accountkit.ui.AccountKitActivity"
+            android:screenOrientation="nosensor" />
+
+        <service
+            android:name="com.gotaxi.driver.Services.FloatingViewService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.gotaxi.driver.Services.FloatWidgetService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <activity android:name="com.razorpay.CheckoutActivity"
+            tools:node="merge"
+            android:exported="true"
+            />
+
+        <receiver android:name="com.razorpay.RzpTokenReceiver"
+            tools:node="merge"
+            android:exported="true"
+            />
+        <activity android:exported="false"
+            android:name=".Activity.AddCardActivity"
+            android:label="@string/add"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:exported="false"
+            android:name=".Activity.ManageCardActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name=".Activity.SubscriptionActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+    </application>
+
+</manifest>

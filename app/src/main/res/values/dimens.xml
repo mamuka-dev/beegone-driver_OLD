@@ -1,0 +1,48 @@
+<resources>
+
+    <!--    max lengths-->
+    <integer name="name_len">20</integer>
+    <integer name="phone_len">15</integer>
+    <integer name="email_len">30</integer>
+
+    <!-- Button customization -->
+    <dimen name="button_height">52dp</dimen>
+    <dimen name="button_padding">2dp</dimen>
+    <dimen name="card_elevation">3dp</dimen>
+
+    <!-- content customization -->
+    <dimen name="content_padding">10dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <!--Text size-->
+    <dimen name="text_size_medium">18sp</dimen>
+
+    <!--Image size-->
+    <dimen name="circular_image_width">70dp</dimen>
+    <dimen name="circular_image_height">70dp</dimen>
+    <dimen name="circular_status_image_width">40dp</dimen>
+    <dimen name="circular_status_image_height">40dp</dimen>
+
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="actionBarSize">56dp</dimen>
+
+    <!--genaral spacing-->
+    <dimen name="spacing_middle">10dp</dimen>
+    <dimen name="spacing_large">15dp</dimen>
+    <dimen name="spacing_mlarge">20dp</dimen>
+
+
+<!--font sizes-->
+    <dimen name="font_title">15sp</dimen>
+    <dimen name="font_edit_text">13sp</dimen>
+    <dimen name="font_size_button">13sp</dimen>
+    <dimen name="font_size_chat">13sp</dimen>
+
+    <dimen name="font_small">12sp</dimen>
+    <dimen name="font_medium">13sp</dimen>
+    <dimen name="font_large">15sp</dimen>
+    <dimen name="font_x_large">17sp</dimen>
+    <dimen name="dimen_loader">60dp</dimen>
+</resources>

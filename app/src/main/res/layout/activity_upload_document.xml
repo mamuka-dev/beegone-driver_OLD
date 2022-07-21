@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.gotaxi.driver.Activity.UploadDocumentActivity">
+
+    <LinearLayout
+        android:elevation="@dimen/_10sdp"
+        android:id="@+id/lnrTitle"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/text_color_white"
+        tools:ignore="UnusedAttribute">
+
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_weight="0.10"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="5dp"
+            android:src="@drawable/back_drawable" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.80"
+            android:gravity="center_vertical"
+            android:text="@string/upload_documents"
+            android:fontFamily="@font/sfd_regular"
+            android:textColor="@color/black_text_color"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="10dp"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/item_document"/>
+
+            <Button
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/uploded"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/round_corner_primary_button"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:text="@string/upload_done"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_button"
+                android:visibility="visible" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

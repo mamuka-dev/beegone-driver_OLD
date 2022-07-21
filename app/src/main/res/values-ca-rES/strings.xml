@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources
+    [<!ENTITY appName "GoTaxi Driver"><!ENTITY appNamealone "GoTaxi Driver"><!ENTITY appNameCaps "GoTaxi Driver"><!ENTITY order "passeig"><!ENTITY orders "passejades"><!ENTITY ridescap "PASSATGES"><!ENTITY service "Servei">]>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--  Manual Translation-->
+    <string name="location_updated">Ubicació actualitzada: %1$s</string>
+    <string name="cancel_ride">Cancel · lar &order;</string>
+    <string name="cencel_request">Esteu segur que voleu cancel·lar el &order;?</string>
+    <string name="no_rides">No &orders; completat.</string>
+    <string name="your_trips">El teu &orders;</string>
+    <string name="cancel_confirm">Esteu segur que voleu cancel·lar el &order;?</string>
+    <string name="loading">Carregant&#8230;</string>
+    <string name="upcoming_trips">Properament &orders;</string>
+    <string name="past_trips">Passat &orders;</string>
+    <string name="explore_new_way_to_earn_with">Explora una nova manera de guanyar amb &appName;</string>
+    <string name="i_agree_ro_the_terms_amp_conditions_and_privacy_policy"><![CDATA[Accepto els Termes i condicions i la Política de privadesa]]></string>
+    <string name="by_continuing_you_agree_that_you_have_read_and_accept_our_t_amp_cs_and_privacy_policy">
+        <![CDATA[En continuar, acceptes que has llegit i acceptes el nostre <a href="termes:">Termes del servei</a> i <a href="privadesa:">Privacy Policy.</a>]]></string>
+    <string name="terms_amp_conditions"><![CDATA[Termes i Condicions]]></string>
+    <string name="msg_loc_data">&appName; L\'aplicació recull dades d\'ubicació per permetre fer el seguiment dels vostres viatges a la feina i calcular la distància recorreguda fins i tot quan l\'aplicació està tancada o no s\'utilitza.</string>
+    <string name="accept_terms_condition">Accepteu les Condicions &amp; Condicions</string>
+    <string name="_1_cause_of_new_account">1. Causa del compte nou\n2. El compte està suspès\n3. Termes &amp; Incompliment de condicions\n4. No Pagament</string>
+    <string name="enter_otp_nto_start_trip">Introduïu OTP:\nPer començar el viatge</string>
+    <string name="schedule_rides">Programat \nPassejades</string>
+    <string name="canceled_rides">Cancel·lat \nPassejades</string>
+    <string name="support_available_24_7_but_sometime_nwait_time_can_be_longer">Suport disponible les 24 hores del dia, els 7 dies de la setmana, però de vegades \n has d\'esperar una mica més</string>
+    <string name="be_online_ncustomers_are_waiting_to_travel_with_you">Estigueu en línia!\nEls clients estan esperant per reservar-te</string>
+    <string name="str_recharge_Wallet">Per recarregar el saldo de la cartera, si us plau\nTRUQUEU AL NOSTRE SUPORT</string>
+    <!--    Auto Translation-->
+    <string-array name="languagelist" tools:ignore="InconsistentArrays">
+        <item>Anglès</item>
+        <item>espanyol</item>
+        <item>francès</item>
+        <item>polonès</item>
+        <item>finès</item>
+        <item>suec</item>
+        <item>català</item>
+        <item>àrab</item>
+    </string-array>
+
+    <string name="navigation_drawer_open">Obre el calaix de navegació</string>
+    <string name="navigation_drawer_close">Tanqueu el calaix de navegació</string>
+    <string name="close">Tanca</string>
+    <string name="email">Correu electrònic</string>
+    <string name="phone_number">Número de telèfon</string>
+    <string name="password">Contrasenya</string>
+    <string name="first_name">Nom</string>
+    <string name="last_name">Cognom</string>
+    <string name="time_taken">Temps pres</string>
+    <string name="mobile_number_validation">El número de mòbil ha de tenir números d\'entre 10 i 20 dígits</string>
+
+
+
+    <string name="edit_profile">Edita el compte</string>
+    <string name="change_password">Canviar la contrasenya?</string>
+    <string name="save">DESA</string>
+    <string name="update_success">Perfil actualitzat.</string>
+
+    <string name="connect_to_network">Connecta\'t a la xarxa o surt</string>
+    <string name="connect_to_wifi">Connecteu-vos a WIFI</string>
+    <string name="quit">Surt</string>
+
+    <string name="view_receipt">Veure el rebut</string>
+    <string name="cancel">Cancel · lar</string>
+
+
+    <string name="something_went_wrong">Alguna cosa ha anat malament.</string>
+    <string name="fb_cancel">S\'ha cancel·lat l\'inici de sessió a Facebook</string>
+    <string name="fb_error">L\'inici de sessió a Facebook ha fallat</string>
+    <string name="google_login">No s\'ha pogut iniciar la sessió a Google</string>
+    <string name="social_cancel">S\'ha cancel·lat l\'inici de sessió a les xarxes socials</string>
+    <string name="something_went_wrong_net">S\'ha produït un error. Comproveu la connexió a Internet.</string>
+    <string name="oops_connect_your_internet">Vaja! Connecteu la vostra Internet.</string>
+    <string name="server_down">No es pot arribar al servidor.</string>
+    <string name="please_try_again">Siusplau torna-ho a provar.</string>
+    <string name="email_validation">Introduïu el vostre identificador de correu electrònic.</string>
+    <string name="not_valid_email">No és un identificador de correu electrònic vàlid.</string>
+    <string name="first_name_empty">Nom obligatori.</string>
+    <string name="last_name_empty">Cognom obligatori.</string>
+    <string name="mobile_number_empty">Cal el número de mòbil.</string>
+    <string name="request_reject">La sol·licitud s\'ha rebutjat correctament</string>
+    <string name="request_accept">La sol·licitud s\'ha acceptat correctament</string>
+    <string name="request_cancel">Heu cancel·lat la sol·licitud</string>
+    <string name="write_your_comment">Escriu els teus comentaris</string>
+
+
+    <string name="your_wallet_amount">L\'import de la teva cartera és</string>
+
+    <string name="go_online">Anar online</string>
+
+    <string name="invalid_credentials">Nom d\'usuari i contrasenya no vàlids.</string>
+
+
+    <string name="history">Història</string>
+    <string name="rides_history">Història de les passejades</string>
+    <string name="comments">Comentaris</string>
+    <string name="no_upcoming_trips">Viatges no disponibles.</string>
+
+    <string name="upcoming">Properament</string>
+    <string name="past">Passat</string>
+    <string name="payment_methods">Mètodes de Pagament</string>
+
+    <string name="tap_when_arrived">ARRIBAT</string>
+    <string name="tap_when_pickedup">RECOLLIT</string>
+    <string name="tap_when_dropped">TOQUEU QUAN ES CAIXA</string>
+    <string name="tap_when_paid">CONFIRMAR EL PAGAMENT</string>
+    <string name="rate_user">PRESENTAR</string>
+    <string name="rate_your_trip">Valoreu el vostre client</string>
+
+
+    <string name="change_password_title">Canvia la contrasenya</string>
+    <string name="current_password">Contrasenya actual</string>
+    <string name="new_password">nova contrasenya</string>
+    <string name="confirm_password">Confirmar nova contrasenya</string>
+    <string name="please_enter_current_pass">Introduïu la contrasenya actual.</string>
+    <string name="please_enter_new_pass">Introduïu una nova contrasenya.</string>
+    <string name="different_passwords">La contrasenya no coincideix.</string>
+
+
+    <string name="home">a casa</string>
+
+    <string name="english">Anglès</string>
+    <string name="wallet">Cartera</string>
+    <string name="help">Ajuda</string>
+    <string name="earnings">Guanys</string>
+    <string name="share">Compartir</string>
+    <string name="logout">Tancar sessió</string>
+    <string name="valid_image">No s\'ha trobat cap imatge</string>
+    <string name="user_no_mobile">L\'usuari no té un número de mòbil vàlid.</string>
+    <string name="reset_password">Restablir la contrasenya</string>
+    <string name="request_time_out">Temps d\'espera esgotat</string>
+    <string name="yes">Sí</string>
+    <string name="choose_acc">Trieu un compte</string>
+    <string name="no_comments">No hi ha cap comentari disponible</string>
+    <string name="base_price">Base fer</string>
+    <string name="distance_price">Tarifa a distància</string>
+    <string name="profile">Perfil</string>
+    <string name="sos_confirm">Esteu segur que voleu continuar amb la trucada d\'emergència?</string>
+    <string name="invoice">Factura</string>
+    <string name="invoice_alone">Factura</string>
+    <string name="pick_up">Ubicació de recollida</string>
+    <string name="drop_at">Drop Ubicació</string>
+    <string name="reason_to_cancel">Motiu per cancel·lar</string>
+    <string name="booking_id_colon">ID de reserva:</string>
+    <string name="booking_id">ID de reserva</string>
+    <string name="reason">Raó</string>
+    <string name="submit">Presentar</string>
+    <string name="summary">Resum</string>
+    <string name="revenue">Ingressos</string>
+
+    <string name="no_address">No hi ha cap adreça disponible</string>
+    <string name="email_exist">El correu electrònic ja s\'ha pres</string>
+    <string name="sorry_for_inconvinent">Disculpeu les molèsties, els nostres assistents estan ocupats ara mateix</string>
+    <string name="total_earnings">Guanys totals</string>
+    <string name="time">Temps</string>
+    <string name="distance">Distància</string>
+    <string name="amount">Import</string>
+    <string name="drop_address">Deixa l\'adreça</string>
+    <string name="where_to">Cap a on?</string>
+    <string name="user">Usuari</string>
+    <string name="sample">No 10 Chennai</string>
+    <string name="call">ANOMENADA</string>
+    <string name="please_enter_confirm_pass">Introduïu la contrasenya de confirmació</string>
+    <string name="distance_travelled">Distància recorreguda</string>
+    <string name="tax">Impost</string>
+    <string name="total">Total</string>
+    <string name="amount_to_be_paid">Import a pagar</string>
+    <string name="rate_your_trips">Valoreu el vostre client</string>
+    <string name="server">El servidor no està disponible temporalment.! Comproveu més tard.</string>
+    <string name="schedule">Horari</string>
+    <string name="accept">Acceptar</string>
+    <string name="reject">Rebutjar</string>
+    <string name="battery">La bateria és baixa, si us plau, carregueu el mòbil!</string>
+    <string name="new_version_available">Nova versió disponible</string>
+    <string name="update_to_continue">Si us plau, actualitzeu l\'aplicació a una versió nova.</string>
+    <string name="update">Actualització</string>
+    <string name="no_thanks">No gràcies</string>
+    <string name="new_password_validation">La contrasenya nova no hauria de ser la mateixa que la contrasenya antiga.</string>
+    <string name="password_validation1">La contrasenya ha de contenir un mínim de 6 caràcters i un màxim de 16 caràcters</string>
+    <string name="today_completed">Objectiu completat avui</string>
+    <string name="sign_in">Inicia sessió</string>
+    <string name="signup">Registra\'t</string>
+
+    <string name="upload_documents">Carregar Documents</string>
+    <string name="user_name">Nom d\'usuari</string>
+    <string name="chat">Xatejar</string>
+    <string name="type_a_message">Escriviu un missatge</string>
+    <string name="amount_you_have_to_pay">Import que teniu a Wallet</string>
+    <string name="pay_now">Paga ara</string>
+    <string name="service_charges">Comissions de servei</string>
+    <string name="cash_collected">Diners recaptats</string>
+
+    <string name="no_past_order_available">No hi ha viatges anteriors disponibles</string>
+    <string name="rides">Passejades</string>
+    <string name="manage_account">Gestiona el compte</string>
+    <string name="revenue_report">Informe d\'ingressos</string>
+    <string name="withdrawn">Retirat</string>
+    <string name="revenue_s">Ingressos</string>
+    <string name="bank_account">Compte bancari</string>
+    <string name="account_holder_name">nom del titular del compte</string>
+    <string name="bank_name">Nom del banc</string>
+    <string name="ifsc_code">Codi IFSC</string>
+    <string name="account_number">Número de compte</string>
+    <string name="account_type">Tipus de compte</string>
+    <string name="pending_withdrawal">Retirada pendent</string>
+    <string name="thank_you">Gràcies!</string>
+    <string name="your_withdrawal_was_successful">La teva retirada ha estat correcta</string>
+    <string name="taxi_meter">Taximetre</string>
+    <string name="start_now">Comença ara</string>
+    <string name="speed">Velocitat:</string>
+    <string name="send_otp_again">Envia OTP de nou</string>
+    <string name="edit_bank_account">Edita el compte bancari</string>
+    <string name="current_balance">Balanç actual</string>
+    <string name="withdraw_current_balance">Retirar el saldo actual</string>
+    <string name="ride_completed">Passejada completada</string>
+
+    <string name="what_s_your_number">Quin és el teu número de mòbil?</string>
+    <string name="we_ll_text_a_code_to_verify_phone">Us enviarem un codi per verificar el vostre telèfon</string>
+    <string name="verify">Verificar</string>
+    <string name="enter_the_code">Introduïu el codi</string>
+    <string name="sent_to">Enviat a</string>
+    <string name="confirm">Confirmeu</string>
+    <string name="what_s_your_name">Introduïu els vostres detalls</string>
+    <string name="users_will_confirm_it_s_you_when_they_pick_up">Els clients confirmaran que ets tu quan reserven un viatge</string>
+    <string name="upload_done">Carrega Fet</string>
+    <string name="please_enter_your_phone">Introduïu el vostre número de mòbil</string>
+    <string name="please_enter_password">Introduïu la vostra contrasenya</string>
+    <string name="document">Document</string>
+    <string name="your_account_under_review">El vostre compte està en revisió</string>
+    <string name="account_verification">Verificació del compte</string>
+    <string name="upload">Carrega</string>
+    <string name="get_a_ride">Fes un viatge</string>
+    <string name="settings">Configuració</string>
+    <string name="support">Suport</string>
+    <string name="ongoing">En marxa</string>
+    <string name="view_profile">Veure el perfil</string>
+    <string name="ready_to_pickup">A punt per recollir clients!</string>
+    <string name="you_are_online">Estàs en línia</string>
+    <string name="account_info">Informació del compte</string>
+    <string name="chat_with_our_support">Xateja amb el nostre suport</string>
+    <string name="call_us">Truca\'ns</string>
+    <string name="mail_us">Envieu-nos un correu</string>
+    <string name="support_live_chat">Xat de Whatsapp</string>
+    <string name="we_are_currently_undergoing_maintenance_sorry_about_the_inconvenience_we_will_back_soon">Actualment estem fent manteniment. Disculpeu les molèsties. Tornarem aviat</string>
+    <string name="you_are_offline">Estàs fora de línia</string>
+
+    <string name="privacy_policy">Política de privacitat</string>
+
+    <string name="about">Sobre</string>
+    <string name="to_do">Fer</string>
+    <string name="not_available">No disponible</string>
+    <string name="today_s_report">Informe d\'avui</string>
+    <string name="this_week_s_report">Informe d\'aquesta setmana</string>
+    <string name="w_am_not_available">No hi ha quantitat disponible per retirar</string>
+    <string name="b_details_not_available">Les dades del compte bancari no estan disponibles</string>
+    <string name="vehicle_info">Informació del vehicle</string>
+    <string name="vehicle_model">Marca i color del vehicle</string>
+    <string name="vehicle_number">Matricula</string>
+    <string name="service_category">Categoria de servei</string>
+    <string name="service_name">Nom del servei</string>
+
+    <string name="return_trip_available">Viatge de tornada disponible?</string>
+    <string name="no">No</string>
+    <string name="waiting_charges">Càrrecs d\'espera</string>
+    <string name="amount_to_collect">Import a cobrar</string>
+    <string name="ride_details">Detalls del viatge</string>
+    <string name="cash">Efectiu</string>
+    <string name="payment_mode">Modalitat de pagament</string>
+    <string name="tax_applied">Impost Aplicat</string>
+    <string name="enter_vehicle_model">Introduïu la marca del vostre vehicle</string>
+    <string name="enter_vehicle_number">Introduïu la vostra matrícula</string>
+    <string name="enter_phone_number">Introduïu el vostre número de mòbil</string>
+    <string name="enter_passpin">Introduïu la contrasenya/el PIN</string>
+    <string name="booking_request">Sol·licitud de reserva</string>
+    <string name="estimated_amount">Import estimat</string>
+    <string name="ride_completed_successfully">Trajecte completat amb èxit</string>
+    <string name="special_not_note_available">Nota especial disponible</string>
+    <string name="total_revenue">Els ingressos totals</string>
+    <string name="wallet_amount">Import de la cartera</string>
+    <string name="pay_pending_charges">Paga els càrrecs pendents</string>
+    <string name="fake_id_note">Nota: si ets home però t\'has registrat com a dona, el teu DNI es bloquejarà permanentment.</string>
+    <string name="sorry_note_reg">Ho sentim, només es podria registrar una conductora femenina.</string>
+    <string name="token_expird">El testimoni ha caducat</string>
+    <string name="wrong_pass_len">La longitud de la contrasenya ha de ser com a mínim 6</string>
+    <string name="add_money">Afegeix diners</string>
+    <string name="pay_by_card">Pagar amb Targeta</string>
+    <string name="pay_by_paypal">Pagar amb PayPal</string>
+    <string name="card_mobile_money">Targeta /Diners mòbils</string>
+    <string name="upi_payments">Pagaments UPI</string>
+    <string name="card_upi_netbanking">Targeta /UPI /NetBanking</string>
+    <string name="add_amount">AFEGEIX QUANT</string>
+    <string name="enter_the_amount">Introduïu l\'import</string>
+    <string name="add_money_to_wallet">AFEGEIX DINERS A LA CARTERA</string>
+    <string name="wallet_balance">L\'import de la teva cartera és</string>
+    <string name="add">Afegeix una targeta</string>
+    <string name="change">Canvia</string>
+    <string name="please_wait">Si us plau, espereu...</string>
+    <string name="manage_cards">Gestionar targetes</string>
+    <string name="payment">Pagament</string>
+    <string name="add_payments">Afegeix la targeta per als pagaments</string>
+    <string name="card_number">Número de targeta de crèdit/dèbit</string>
+    <string name="enter_card_details">Les dades de la targeta no són vàlides</string>
+    <string name="are_you_sure">Esteu segur que voleu eliminar-lo?</string>
+    <string name="str_amount_add_success">Import afegit correctament</string>
+    <string name="str_forget_pass">Heu oblidat la contrasenya?</string>
+    <string name="selected_payment_mode">Efectiu</string>
+    <string name="error_something_wrong_card">S\'ha produït un error amb la teva TARGETA</string>
+    <string name="action_wallet">Cartera</string>
+    <string name="logout_alert">Esteu segur que voleu tancar la sessió?</string>
+    <string name="str_loc_perm_title">Permís d\'ubicació necessari</string>
+    <string name="subscription">Subscripcions</string>
+    <string name="str_sel_pkg">Seleccioneu el paquet de subscripció</string>
+    <string name="str_cnfrm_cancel_subsc">Confirmes que vols cancel·lar aquesta subscripció?</string>
+    <string name="str_cnfrm_subsc">Confirmes que vols subscriure\'t a aquest paquet?</string>
+    <string name="no_sub_available">No hi ha subscripció disponible</string>
+    <string name="str_subscribe">Subscriu-te</string>
+</resources>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/phoneverificationlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/sfd_regular"
+        android:gravity="center_vertical"
+        android:text="@string/what_s_your_number"
+        android:textColor="@color/black_text_color"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/sfd_regular"
+        android:gravity="center"
+        android:text="@string/we_ll_text_a_code_to_verify_phone"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_large"
+        android:typeface="monospace" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edittext_background_asset"
+        android:orientation="horizontal">
+
+        <!--                            <TextView-->
+        <!--                                android:layout_width="0dp"-->
+        <!--                                android:layout_height="match_parent"-->
+        <!--                                android:layout_gravity="center"-->
+        <!--                                android:layout_weight="0.20"-->
+        <!--                                android:gravity="center"-->
+        <!--                                android:text="@string/country_code"-->
+        <!--                                android:textColor="@color/black"-->
+        <!--                                android:textSize="15sp" />-->
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/mcpp"
+            app:ccp_autoDetectCountry="true"
+            app:ccp_defaultNameCode=""
+            app:ccp_showFlag="true"
+            app:ccp_showFullName="false"
+            app:ccp_showNameCode="false"
+            app:ccp_showPhoneCode="true"
+            app:ccp_textSize="15sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:layout_weight="0.25"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent" />
+
+        <EditText
+            android:id="@+id/idphone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="0.75"
+            android:background="@android:color/transparent"
+            android:digits="0123456789"
+            android:fontFamily="@font/sfd_regular"
+            android:gravity="start|center_vertical"
+            android:hint="@string/phone_number"
+            android:inputType="phone"
+            android:maxLength="@integer/phone_len"
+            android:padding="10dp"
+            android:textSize="@dimen/font_edit_text" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/get_otp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/round_corner_primary_button"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:text="@string/verify"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_button"
+        android:visibility="visible" />
+</LinearLayout>

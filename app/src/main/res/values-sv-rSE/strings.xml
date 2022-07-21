@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources
+    [<!ENTITY appName "GoTaxi Driver"><!ENTITY appNamealone "GoTaxi Driver"><!ENTITY appNameCaps "GoTaxi Driver"><!ENTITY order "rida"><!ENTITY orders "åkattraktioner"><!ENTITY ridescap "RIDER"><!ENTITY service "Service">]>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--  Manual Translation-->
+    <string name="location_updated">Plats uppdaterad: %1$s</string>
+    <string name="cancel_ride">Avbryt &order;</string>
+    <string name="cencel_request">Är du säker på att du vill avbryta &order;?</string>
+    <string name="no_rides">Nej &orders; avslutad.</string>
+    <string name="your_trips">Din &orders;</string>
+    <string name="cancel_confirm">Är du säker på att du vill avbryta &order;?</string>
+    <string name="loading">Läser in&#8230;</string>
+    <string name="upcoming_trips">Kommande &orders;</string>
+    <string name="past_trips">Dåtid &orders;</string>
+    <string name="explore_new_way_to_earn_with">Utforska ett nytt sätt att tjäna med &appName;</string>
+    <string name="i_agree_ro_the_terms_amp_conditions_and_privacy_policy"><![CDATA[Jag godkänner villkoren & Villkor och sekretesspolicy]]></string>
+    <string name="by_continuing_you_agree_that_you_have_read_and_accept_our_t_amp_cs_and_privacy_policy">
+        <![CDATA[Genom att fortsätta godkänner du att du har läst och accepterar vår <a href="terms:">Användarvillkor</a> och <a href="privacy:">Integritetspolicy.</a>]]></string>
+    <string name="terms_amp_conditions"><![CDATA[Allmänna Villkor]]></string>
+    <string name="msg_loc_data">&appName; app samlar in platsdata för att kunna spåra dina resor till jobbet och beräkna tillryggalagd sträcka även när appen är stängd eller inte används.</string>
+    <string name="accept_terms_condition">Vänligen acceptera villkoren &amp; Betingelser</string>
+    <string name="_1_cause_of_new_account">1. Orsak till nytt konto\n2.Kontot är avstängt\n3. Villkor &amp; Villkorsbrott\n4. Utebliven betalning</string>
+    <string name="enter_otp_nto_start_trip">Ange OTP :\nFör att starta resan</string>
+    <string name="schedule_rides">Schemalagt \nidus</string>
+    <string name="canceled_rides">Inställt \nRidus</string>
+    <string name="support_available_24_7_but_sometime_nwait_time_can_be_longer">Support tillgänglig 24/7, men ibland \n du måste vänta lite längre</string>
+    <string name="be_online_ncustomers_are_waiting_to_travel_with_you">Var online!\nKunder väntar på att boka dig</string>
+    <string name="str_recharge_Wallet">För att ladda ditt plånbokssaldo tack\nRING VÅR SUPPORT</string>
+    <!--    Auto Translation-->
+    <string-array name="languagelist" tools:ignore="InconsistentArrays">
+        <item>engelsk</item>
+        <item>spanska</item>
+        <item>franska</item>
+        <item>putsa</item>
+        <item>finska</item>
+        <item>svenska</item>
+        <item>katalanska</item>
+        <item>arabiska</item>
+    </string-array>
+
+    <string name="navigation_drawer_open">Öppna navigeringslådan</string>
+    <string name="navigation_drawer_close">Stäng navigationslådan</string>
+    <string name="close">Stänga</string>
+    <string name="email">E-post</string>
+    <string name="phone_number">Telefonnummer</string>
+    <string name="password">Lösenord</string>
+    <string name="first_name">Förnamn</string>
+    <string name="last_name">Efternamn</string>
+    <string name="time_taken">Tid tagen</string>
+    <string name="mobile_number_validation">Mobilnumret måste ha nummer mellan 10 och 20 siffror</string>
+
+
+
+    <string name="edit_profile">Redigera konto</string>
+    <string name="change_password">Ändra lösenord?</string>
+    <string name="save">SPARA</string>
+    <string name="update_success">Profil uppdaterad.</string>
+
+    <string name="connect_to_network">Anslut till nätverk eller avsluta</string>
+    <string name="connect_to_wifi">Anslut till WIFI</string>
+    <string name="quit">Sluta med</string>
+
+    <string name="view_receipt">Visa kvitto</string>
+    <string name="cancel">Avbryt</string>
+
+
+    <string name="something_went_wrong">Något gick fel.</string>
+    <string name="fb_cancel">Facebook-inloggning avbröts</string>
+    <string name="fb_error">Facebook-inloggning misslyckades</string>
+    <string name="google_login">Google-inloggning misslyckades</string>
+    <string name="social_cancel">Social inloggning avbröts</string>
+    <string name="something_went_wrong_net">Något gick fel. Kontrollera internetanslutningen.</string>
+    <string name="oops_connect_your_internet">Hoppsan! Anslut ditt internet.</string>
+    <string name="server_down">Det gick inte att nå servern.</string>
+    <string name="please_try_again">Var god försök igen.</string>
+    <string name="email_validation">Ange ditt e-post-ID.</string>
+    <string name="not_valid_email">Inte ett giltigt e-post-ID.</string>
+    <string name="first_name_empty">Förnamn krävs.</string>
+    <string name="last_name_empty">Efternamn krävs.</string>
+    <string name="mobile_number_empty">Mobilnummer krävs.</string>
+    <string name="request_reject">Begäran avvisades</string>
+    <string name="request_accept">Begäran har godkänts</string>
+    <string name="request_cancel">Du har avbrutit begäran</string>
+    <string name="write_your_comment">Skriv dina kommentarer</string>
+
+
+    <string name="your_wallet_amount">Beloppet i din plånbok är</string>
+
+    <string name="go_online">Gå online</string>
+
+    <string name="invalid_credentials">Ogiltigt användarnamn och lösenord.</string>
+
+
+    <string name="history">Historia</string>
+    <string name="rides_history">Åk historia</string>
+    <string name="comments">Kommentarer</string>
+    <string name="no_upcoming_trips">Åkturer inte tillgängliga.</string>
+
+    <string name="upcoming">Kommande</string>
+    <string name="past">Dåtid</string>
+    <string name="payment_methods">Betalningsmetoder</string>
+
+    <string name="tap_when_arrived">KOMMER</string>
+    <string name="tap_when_pickedup">PLOCKADE UPP</string>
+    <string name="tap_when_dropped">TRYCK NÄR DU TAPPAD</string>
+    <string name="tap_when_paid">BEKRÄFTA BETALNING</string>
+    <string name="rate_user">SKICKA IN</string>
+    <string name="rate_your_trip">Betygsätt din kund</string>
+
+
+    <string name="change_password_title">Ändra lösenord</string>
+    <string name="current_password">Nuvarande lösenord</string>
+    <string name="new_password">nytt lösenord</string>
+    <string name="confirm_password">Bekräfta nytt lösenord</string>
+    <string name="please_enter_current_pass">Vänligen ange nuvarande lösenord.</string>
+    <string name="please_enter_new_pass">Vänligen ange nytt lösenord.</string>
+    <string name="different_passwords">Lösenordet matchar inte.</string>
+
+
+    <string name="home">Hem</string>
+
+    <string name="english">engelsk</string>
+    <string name="wallet">Plånbok</string>
+    <string name="help">Hjälp</string>
+    <string name="earnings">Förtjänst</string>
+    <string name="share">Dela med sig</string>
+    <string name="logout">Logga ut</string>
+    <string name="valid_image">Ingen bild hittades</string>
+    <string name="user_no_mobile">Användaren har inte ett giltigt mobilnummer.</string>
+    <string name="reset_password">Återställ lösenord</string>
+    <string name="request_time_out">Föreslå uppehåll</string>
+    <string name="yes">Ja</string>
+    <string name="choose_acc">Välj ett konto</string>
+    <string name="no_comments">Ingen kommentar tillgänglig</string>
+    <string name="base_price">Bas gör</string>
+    <string name="distance_price">Distanspris</string>
+    <string name="profile">Profil</string>
+    <string name="sos_confirm">Är du säker på att du vill fortsätta med nödsamtal?</string>
+    <string name="invoice">Faktura</string>
+    <string name="invoice_alone">Faktura</string>
+    <string name="pick_up">Upphämtningsplats</string>
+    <string name="drop_at">Släpp plats</string>
+    <string name="reason_to_cancel">Anledning att avbryta</string>
+    <string name="booking_id_colon">Boknings-ID:</string>
+    <string name="booking_id">Boknings-ID</string>
+    <string name="reason">Anledning</string>
+    <string name="submit">Skicka in</string>
+    <string name="summary">Sammanfattning</string>
+    <string name="revenue">Inkomst</string>
+
+    <string name="no_address">Ingen adress tillgänglig</string>
+    <string name="email_exist">Mejlet har redan tagits</string>
+    <string name="sorry_for_inconvinent">Ursäkta besväret, våra assistenter är upptagna just nu</string>
+    <string name="total_earnings">Totala intäkter</string>
+    <string name="time">Tid</string>
+    <string name="distance">Distans</string>
+    <string name="amount">Belopp</string>
+    <string name="drop_address">Släpp adress</string>
+    <string name="where_to">Vart?</string>
+    <string name="user">Användare</string>
+    <string name="sample">Nr 10 chennai</string>
+    <string name="call">RINGA UPP</string>
+    <string name="please_enter_confirm_pass">Vänligen ange bekräftelselösenord</string>
+    <string name="distance_travelled">Rest avstånd</string>
+    <string name="tax">Beskatta</string>
+    <string name="total">Total</string>
+    <string name="amount_to_be_paid">Summa att betala</string>
+    <string name="rate_your_trips">Betygsätt din kund</string>
+    <string name="server">Servern är inte tillgänglig för tillfället.! Kontrollera senare.</string>
+    <string name="schedule">Schema</string>
+    <string name="accept">Acceptera</string>
+    <string name="reject">Avvisa</string>
+    <string name="battery">Batteriet är lågt, ladda din mobil!</string>
+    <string name="new_version_available">Ny version tillgänglig</string>
+    <string name="update_to_continue">Uppdatera appen till ny version.</string>
+    <string name="update">Uppdatering</string>
+    <string name="no_thanks">Nej tack</string>
+    <string name="new_password_validation">Det nya lösenordet ska inte vara detsamma som det gamla.</string>
+    <string name="password_validation1">Lösenordet måste innehålla minst 6 tecken, högst 16 tecken</string>
+    <string name="today_completed">Idag slutfört mål</string>
+    <string name="sign_in">Logga in</string>
+    <string name="signup">Bli Medlem</string>
+
+    <string name="upload_documents">Ladda upp dokument</string>
+    <string name="user_name">Användarnamn</string>
+    <string name="chat">Chatt</string>
+    <string name="type_a_message">Skriv ett meddelande</string>
+    <string name="amount_you_have_to_pay">Belopp du har i Wallet</string>
+    <string name="pay_now">Betala nu</string>
+    <string name="service_charges">Serviceavgifter</string>
+    <string name="cash_collected">Kontanter insamlade</string>
+
+    <string name="no_past_order_available">Inga tidigare turer tillgängliga</string>
+    <string name="rides">Rider</string>
+    <string name="manage_account">Hantera konto</string>
+    <string name="revenue_report">Intäktsrapport</string>
+    <string name="withdrawn">Indragen</string>
+    <string name="revenue_s">Inkomst</string>
+    <string name="bank_account">Bankkonto</string>
+    <string name="account_holder_name">Kontoinnehavarens namn</string>
+    <string name="bank_name">Bank namn</string>
+    <string name="ifsc_code">IFSC-kod</string>
+    <string name="account_number">Kontonummer</string>
+    <string name="account_type">Kontotyp</string>
+    <string name="pending_withdrawal">Väntar på uttag</string>
+    <string name="thank_you">Tack!</string>
+    <string name="your_withdrawal_was_successful">Ditt uttag lyckades</string>
+    <string name="taxi_meter">Taximätare</string>
+    <string name="start_now">Börja nu</string>
+    <string name="speed">Fart :</string>
+    <string name="send_otp_again">Skicka OTP igen</string>
+    <string name="edit_bank_account">Redigera bankkonto</string>
+    <string name="current_balance">Aktuellt saldo</string>
+    <string name="withdraw_current_balance">Ta ut aktuellt saldo</string>
+    <string name="ride_completed">Körningen avklarad</string>
+
+    <string name="what_s_your_number">Vad är ditt mobilnummer ?</string>
+    <string name="we_ll_text_a_code_to_verify_phone">Vi skickar ett sms med en kod för att verifiera din telefon</string>
+    <string name="verify">Kontrollera</string>
+    <string name="enter_the_code">Skriv in koden</string>
+    <string name="sent_to">Skickad till</string>
+    <string name="confirm">Bekräfta</string>
+    <string name="what_s_your_name">Ange dina uppgifter</string>
+    <string name="users_will_confirm_it_s_you_when_they_pick_up">Kunder kommer att bekräfta att det är du när de bokar en resa</string>
+    <string name="upload_done">Ladda upp klar</string>
+    <string name="please_enter_your_phone">Vänligen ange ditt mobilnummer</string>
+    <string name="please_enter_password">Vänligen ange ditt lösenord</string>
+    <string name="document">Dokumentera</string>
+    <string name="your_account_under_review">Ditt konto är under granskning</string>
+    <string name="account_verification">Konto verifikation</string>
+    <string name="upload">Ladda upp</string>
+    <string name="get_a_ride">Få skjuts</string>
+    <string name="settings">inställningar</string>
+    <string name="support">Stöd</string>
+    <string name="ongoing">Pågående</string>
+    <string name="view_profile">Visa profil</string>
+    <string name="ready_to_pickup">Klara att hämta kunder!</string>
+    <string name="you_are_online">Du är online</string>
+    <string name="account_info">Konto information</string>
+    <string name="chat_with_our_support">Chatta med vår support</string>
+    <string name="call_us">Ring oss</string>
+    <string name="mail_us">Maila oss</string>
+    <string name="support_live_chat">Whatsapp chatt</string>
+    <string name="we_are_currently_undergoing_maintenance_sorry_about_the_inconvenience_we_will_back_soon">Vi genomgår för närvarande underhåll. Ursäkta besväret. Vi kommer tillbaka snart</string>
+    <string name="you_are_offline">Du är offline</string>
+
+    <string name="privacy_policy">Integritetspolicy</string>
+
+    <string name="about">Handla om</string>
+    <string name="to_do">Att göra</string>
+    <string name="not_available">Inte tillgänglig</string>
+    <string name="today_s_report">Dagens rapport</string>
+    <string name="this_week_s_report">Veckans rapport</string>
+    <string name="w_am_not_available">Inget belopp tillgängligt för uttag</string>
+    <string name="b_details_not_available">Bankkontouppgifter är inte tillgängliga</string>
+    <string name="vehicle_info">Fordonsinformation</string>
+    <string name="vehicle_model">Fordonsmärke och färg</string>
+    <string name="vehicle_number">Nummerplåt</string>
+    <string name="service_category">Tjänstekategori</string>
+    <string name="service_name">Service namn</string>
+
+    <string name="return_trip_available">Finns tur och retur?</string>
+    <string name="no">Nej</string>
+    <string name="waiting_charges">Väntande avgifter</string>
+    <string name="amount_to_collect">Belopp att samla in</string>
+    <string name="ride_details">Åkdetaljer</string>
+    <string name="cash">Kontanter</string>
+    <string name="payment_mode">Betalnings sätt</string>
+    <string name="tax_applied">Skatt tillämpas</string>
+    <string name="enter_vehicle_model">Ange ditt fordonsmärke</string>
+    <string name="enter_vehicle_number">Vänligen ange din nummerskylt</string>
+    <string name="enter_phone_number">Vänligen ange ditt mobilnummer</string>
+    <string name="enter_passpin">Vänligen ange lösenord/pinkod</string>
+    <string name="booking_request">Bokningsförfrågan</string>
+    <string name="estimated_amount">Uppskattad mängd</string>
+    <string name="ride_completed_successfully">Körningen avslutad framgångsrikt</string>
+    <string name="special_not_note_available">Speciell anmärkning tillgänglig</string>
+    <string name="total_revenue">Totala intäkter</string>
+    <string name="wallet_amount">Plånboksbelopp</string>
+    <string name="pay_pending_charges">Betala väntande avgifter</string>
+    <string name="fake_id_note">Obs: Om du är man men du har registrerat dig som kvinna, kommer ditt ID att spärras permanent.</string>
+    <string name="sorry_note_reg">Vi beklagar att endast kvinnlig förare kunde registrera sig.</string>
+    <string name="token_expird">Token har löpt ut</string>
+    <string name="wrong_pass_len">Lösenordslängden bör vara minst 6</string>
+    <string name="add_money">Lägg till pengar</string>
+    <string name="pay_by_card">Betala med kort</string>
+    <string name="pay_by_paypal">Betala med PayPal</string>
+    <string name="card_mobile_money">Kort /mobilpengar</string>
+    <string name="upi_payments">UPI-betalningar</string>
+    <string name="card_upi_netbanking">Kort /UPI /NetBanking</string>
+    <string name="add_amount">LÄGG TILL BELÖP</string>
+    <string name="enter_the_amount">Ange beloppet</string>
+    <string name="add_money_to_wallet">LÄGG TILL PENGAR I Plånboken</string>
+    <string name="wallet_balance">Beloppet i din plånbok är</string>
+    <string name="add">Lägg till kort</string>
+    <string name="change">Förändra</string>
+    <string name="please_wait">Vänta...</string>
+    <string name="manage_cards">Hantera kort</string>
+    <string name="payment">Betalning</string>
+    <string name="add_payments">Lägg till kort för betalningar</string>
+    <string name="card_number">Kredit-/betalkortsnummer</string>
+    <string name="enter_card_details">Kortuppgifterna är inte giltiga</string>
+    <string name="are_you_sure">Är du säker på att du vill ta bort?</string>
+    <string name="str_amount_add_success">Belopp har lagts till</string>
+    <string name="str_forget_pass">Glöm lösenord?</string>
+    <string name="selected_payment_mode">Kontanter</string>
+    <string name="error_something_wrong_card">Något fel med ditt KORT</string>
+    <string name="action_wallet">Plånbok</string>
+    <string name="logout_alert">Är du säker på att du vill logga ut?</string>
+    <string name="str_loc_perm_title">Platstillstånd krävs</string>
+    <string name="subscription">Prenumerationer</string>
+    <string name="str_sel_pkg">Vänligen välj prenumerationspaket</string>
+    <string name="str_cnfrm_cancel_subsc">Är du säker på att du vill avsluta den här prenumerationen?</string>
+    <string name="str_cnfrm_subsc">Är du säker på att du vill prenumerera på det här paketet?</string>
+    <string name="no_sub_available">Inget abonnemang tillgängligt</string>
+    <string name="str_subscribe">Prenumerera</string>
+</resources>

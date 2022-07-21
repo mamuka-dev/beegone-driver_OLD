@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lay_pay_method"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:text="@string/payment_methods"
+        android:textStyle="bold"
+        android:textColor="@color/primary_text_color"
+        android:textSize="@dimen/font_large" />
+
+    <LinearLayout
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.60">
+
+            <RadioGroup
+                android:id="@+id/paymentgroup"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/stripe"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="@string/pay_by_card"
+                    android:textColor="@color/grey_80"
+                    android:textSize="@dimen/font_medium" />
+
+                <RadioButton
+                    android:id="@+id/paypal"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="@string/pay_by_paypal"
+                    android:textColor="@color/grey_80"
+                    android:textSize="@dimen/font_medium" />
+
+                <RadioButton
+                    android:id="@+id/flutterwave"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+
+                    android:text="@string/card_mobile_money"
+                    android:textColor="@color/grey_80"
+                    android:textSize="@dimen/font_medium" />
+
+                <RadioButton
+                    android:id="@+id/upi"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="@string/upi_payments"
+                    android:textColor="@color/grey_80"
+                    android:textSize="@dimen/font_medium" />
+
+                <RadioButton
+                    android:id="@+id/razorpay"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="@string/card_upi_netbanking"
+                    android:textColor="@color/grey_80"
+                    android:textSize="@dimen/font_medium" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.30">
+
+            <LinearLayout
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/stripeimg"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/pay_ic_stripe" />
+
+                <ImageView
+                    android:id="@+id/paypalimg"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/pay_ic_paypal" />
+
+                <ImageView
+                    android:id="@+id/flutterwaveimg"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/pay_ic_fluterwave" />
+
+                <ImageView
+                    android:id="@+id/upiimg"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/pay_ic_upi" />
+
+                <ImageView
+                    android:id="@+id/razorpayimg"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/pay_ic_razorpay" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

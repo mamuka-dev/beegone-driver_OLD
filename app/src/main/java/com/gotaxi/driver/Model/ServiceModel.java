@@ -1,0 +1,140 @@
+package com.gotaxi.driver.Model;
+
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
+public class ServiceModel {
+
+    @SerializedName("id")
+    @Expose
+    private Integer id;
+    @SerializedName("name")
+    @Expose
+    private String name;
+    @SerializedName("provider_name")
+    @Expose
+    private String providerName;
+    @SerializedName("image")
+    @Expose
+    private Object image;
+    @SerializedName("capacity")
+    @Expose
+    private Integer capacity;
+    @SerializedName("fixed")
+    @Expose
+    private Integer fixed;
+    @SerializedName("price")
+    @Expose
+    private Integer price;
+    @SerializedName("minute")
+    @Expose
+    private Integer minute;
+    @SerializedName("distance")
+    @Expose
+    private Integer distance;
+    @SerializedName("calculator")
+    @Expose
+    private String calculator;
+    @SerializedName("description")
+    @Expose
+    private String description;
+    @SerializedName("status")
+    @Expose
+    private Integer status;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getProviderName() {
+        return providerName;
+    }
+
+    public void setProviderName(String providerName) {
+        this.providerName = providerName;
+    }
+
+    public Object getImage() {
+        return image;
+    }
+
+    public void setImage(Object image) {
+        this.image = image;
+    }
+
+    public Integer getCapacity() {
+        return capacity;
+    }
+
+    public void setCapacity(Integer capacity) {
+        this.capacity = capacity;
+    }
+
+    public Integer getFixed() {
+        return fixed;
+    }
+
+    public void setFixed(Integer fixed) {
+        this.fixed = fixed;
+    }
+
+    public Integer getPrice() {
+        return price;
+    }
+
+    public void setPrice(Integer price) {
+        this.price = price;
+    }
+
+    public Integer getMinute() {
+        return minute;
+    }
+
+    public void setMinute(Integer minute) {
+        this.minute = minute;
+    }
+
+    public Integer getDistance() {
+        return distance;
+    }
+
+    public void setDistance(Integer distance) {
+        this.distance = distance;
+    }
+
+    public String getCalculator() {
+        return calculator;
+    }
+
+    public void setCalculator(String calculator) {
+        this.calculator = calculator;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public Integer getStatus() {
+        return status;
+    }
+
+    public void setStatus(Integer status) {
+        this.status = status;
+    }
+}

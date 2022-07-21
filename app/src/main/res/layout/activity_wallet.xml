@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lnrTitle"
+        android:elevation="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/text_color_white"
+        tools:ignore="UnusedAttribute">
+
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_weight="0.10"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="5dp"
+            android:src="@drawable/back_drawable" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.80"
+            android:gravity="center_vertical"
+            android:text="@string/action_wallet"
+            android:textColor="@color/primary_text_color"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/wallet_card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingBottom="16dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:elevation="@dimen/_10sdp"
+                            app:cardCornerRadius="10dp"
+                            tools:ignore="UnusedAttribute">
+
+                            <LinearLayout
+                                android:padding="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <com.airbnb.lottie.LottieAnimationView
+                                    android:layout_weight="0.40"
+                                    android:layout_width="0dp"
+                                    android:layout_height="@dimen/_80sdp"
+                                    android:layout_gravity="center"
+                                    app:lottie_autoPlay="true"
+                                    app:lottie_fileName="wallet.json"
+                                    app:lottie_loop="true"  />
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.60"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginTop="@dimen/_10sdp"
+                                        android:text="@string/wallet_balance"
+                                        android:textColor="@color/primary_text_color"
+                                        android:textSize="@dimen/_14sdp" />
+
+                                    <TextView
+                                        android:id="@+id/balance_tv"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginTop="@dimen/_10sdp"
+                                        android:text="0.0"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="@dimen/_15sdp" />
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:elevation="@dimen/_10sdp"
+                            app:cardCornerRadius="10dp"
+                            tools:ignore="UnusedAttribute">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:padding="@dimen/_10sdp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="start"
+                                    android:text="@string/add_money"
+                                    android:textColor="@color/primary_text_color"
+                                    android:textSize="@dimen/_14sdp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_20sdp"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/currencySymbol"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:textSize="16sp" />
+
+                                    <com.gotaxi.driver.Utilities.MyEditText
+                                        android:id="@+id/money_et"
+                                        android:layout_width="@dimen/_100sdp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:hint="0"
+                                        android:inputType="numberDecimal"
+                                        android:textSize="@dimen/_14sdp" />
+
+                                    <com.gotaxi.driver.Utilities.MyButton
+                                        android:id="@+id/one"
+                                        android:layout_width="50dp"
+                                        android:layout_height="35dp"
+                                        android:background="@drawable/border_stroke"
+                                        android:visibility="visible" />
+
+                                    <Space
+                                        android:layout_width="@dimen/_10sdp"
+                                        android:layout_height="wrap_content" />
+
+                                    <com.gotaxi.driver.Utilities.MyButton
+                                        android:id="@+id/two"
+                                        android:layout_width="50dp"
+                                        android:layout_height="35dp"
+                                        android:background="@drawable/border_stroke"
+                                        android:visibility="visible" />
+
+                                    <Space
+                                        android:layout_width="@dimen/_10sdp"
+                                        android:layout_height="wrap_content" />
+
+                                    <com.gotaxi.driver.Utilities.MyButton
+                                        android:id="@+id/three"
+                                        android:layout_width="50dp"
+                                        android:layout_height="35dp"
+                                        android:background="@drawable/border_stroke"
+                                        android:visibility="visible" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_40sdp"
+                            android:elevation="@dimen/_10sdp"
+                            app:cardCornerRadius="10dp"
+                            tools:ignore="UnusedAttribute">
+
+                            <include layout="@layout/payment_method" />
+                            <include layout="@layout/lay_call_support"/>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+
+            <com.gotaxi.driver.Utilities.MyButton
+                android:id="@+id/add_fund_button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/round_corner_primary_button"
+                android:text="@string/add_amount"
+                android:textColor="@color/text_color_white"
+                android:textSize="@dimen/font_size_button"
+                android:textStyle="bold"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+
+        <include layout="@layout/lay_add_money"/>
+    </FrameLayout>
+</LinearLayout>

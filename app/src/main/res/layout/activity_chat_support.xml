@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:elevation="@dimen/_10sdp"
+        android:id="@+id/lnrTitle"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/text_color_white"
+        tools:ignore="UnusedAttribute">
+
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_weight="0.10"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="5dp"
+            android:src="@drawable/back_drawable" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.80"
+            android:gravity="center_vertical"
+            android:text="@string/support_live_chat"
+            android:fontFamily="@font/sfd_regular"
+            android:textColor="@color/black_text_color"
+            android:textSize="@dimen/font_title" />
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/livechatwebview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+</LinearLayout>

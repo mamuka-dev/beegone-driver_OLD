@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    app:behavior_hideable="true"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    tools:ignore="UnusedAttribute">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@color/grey_60" />
+
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorAccent"
+                        android:fontFamily="@font/sfd_regular"
+                        android:text="@string/edit_bank_account" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="@dimen/spacing_middle"
+                    android:background="@drawable/line_dash_grey_20" />
+
+                <EditText
+                    android:paddingStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/b_banknamei"
+                    android:inputType="text"
+                    android:textSize="@dimen/font_edit_text"
+                    android:background="@drawable/edittext_background_asset"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="@string/bank_name"
+                    android:fontFamily="@font/sfd_regular"
+                    tools:ignore="RtlSymmetry"
+                    android:maxLength="@integer/name_len"
+                    />
+
+                <EditText
+                    android:paddingStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/b_ifsci"
+                    android:inputType="text"
+                    android:textSize="@dimen/font_edit_text"
+                    android:background="@drawable/edittext_background_asset"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="@string/ifsc_code"
+                    android:fontFamily="@font/sfd_regular"
+                    tools:ignore="RtlSymmetry"
+                    android:maxLength="30"/>
+
+                <EditText
+                    android:paddingStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/b_accountholdernamei"
+                    android:inputType="text"
+                    android:textSize="@dimen/font_edit_text"
+                    android:background="@drawable/edittext_background_asset"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="@string/account_holder_name"
+                    android:fontFamily="@font/sfd_regular"
+                    tools:ignore="RtlSymmetry"
+                    android:maxLength="30"/>
+
+                <EditText
+                    android:paddingStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/b_accountnumi"
+                    android:inputType="text"
+                    android:textSize="@dimen/font_edit_text"
+                    android:background="@drawable/edittext_background_asset"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="@string/account_number"
+                    android:fontFamily="@font/sfd_regular"
+                    tools:ignore="RtlSymmetry"
+                    android:maxLength="30"/>
+
+
+                <EditText
+                    android:paddingStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/b_typei"
+                    android:inputType="text"
+                    android:textSize="@dimen/font_edit_text"
+                    android:background="@drawable/edittext_background_asset"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="@string/account_type"
+                    android:fontFamily="@font/sfd_regular"
+                    tools:ignore="RtlSymmetry"
+                    android:maxLength="20"/>
+            </LinearLayout>
+
+            <Button
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/update_bank"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/round_corner_primary_button"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:text="@string/update"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_button"
+                android:visibility="visible" />
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

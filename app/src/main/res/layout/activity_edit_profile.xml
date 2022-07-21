@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_edit_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/text_color_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:elevation="@dimen/_10sdp"
+        android:background="@color/text_color_white">
+
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_weight="0.10"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="5dp"
+            android:src="@drawable/back_drawable" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.80"
+            android:gravity="center_vertical"
+            android:text="@string/edit_profile"
+            android:fontFamily="@font/sfd_regular"
+            android:textColor="@color/black_text_color"
+            android:textSize="@dimen/font_title" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardUseCompatPadding="true"
+            android:layout_margin="16dp"
+            app:cardElevation="@dimen/card_elevation"
+            app:cardCornerRadius="16dp"
+            app:contentPadding="16dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_profile"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/circule_img"
+                    android:src="@drawable/img_profile_placehodler"
+
+                    app:civ_shadow="true"
+                    app:civ_shadow_color="#FFFFFF"
+                    app:civ_shadow_radius="10dp" />
+
+                <ImageView
+                    android:id="@+id/edit_profile"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignEnd="@+id/img_profile"
+                    android:layout_alignBottom="@+id/img_profile"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="-2dp"
+                    android:layout_marginBottom="-9dp"
+                    android:padding="5dp"
+                    android:src="@drawable/com_accountkit_pencil" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="16dp"
+                    android:layout_weight="0.10"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/people" />
+
+                <EditText
+                    android:paddingStart="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:id="@+id/first_name"
+                    android:inputType="textPersonName"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:hint="@string/first_name"
+                    android:layout_weight="0.40"
+                    android:textSize="@dimen/font_edit_text"
+                    android:maxLength="@integer/name_len"/>
+
+                <EditText
+                    android:paddingStart="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:id="@+id/last_name"
+                    android:inputType="textPersonName"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:hint="@string/last_name"
+                    android:layout_weight="0.40"
+                    android:textSize="@dimen/font_edit_text"
+                    android:maxLength="@integer/name_len"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="22dp"
+                    android:layout_weight="0.10"
+                    android:layout_marginBottom="10dp"
+                    android:tint="@color/black_text_color"
+                    android:src="@drawable/email" />
+
+                <EditText
+                    android:paddingStart="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:id="@+id/email"
+                    android:enabled="false"
+                    android:inputType="textEmailAddress"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:hint="@string/email"
+                    android:layout_weight="0.90"
+                    android:textSize="@dimen/font_edit_text"
+                    android:maxLength="30"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="22dp"
+                    android:layout_weight="0.10"
+                    android:layout_marginBottom="10dp"
+                    android:tint="@color/black_text_color"
+                    app:srcCompat="@drawable/ic_phone_black_24dp" />
+
+                <EditText
+                    android:paddingStart="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:id="@+id/mobile_no"
+                    android:enabled="false"
+                    android:inputType="phone"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:hint="@string/phone_number"
+                    android:layout_weight="0.90"
+                    android:textSize="@dimen/font_edit_text"/>
+
+            </LinearLayout>
+
+            <com.gotaxi.driver.Utilities.MyButton
+                android:id="@+id/saveBTN"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:background="@drawable/round_corner_primary_button"
+                android:text="@string/save"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/changePasswordTxt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text="@string/change_password"
+                android:fontFamily="@font/sfd_regular"
+                android:textSize="@dimen/font_large"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+
+</LinearLayout>

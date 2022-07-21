@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/view_afterverification"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/sfd_regular"
+        android:gravity="center"
+        android:text="@string/what_s_your_name"
+        android:textColor="@color/black_text_color"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/sfd_regular"
+        android:gravity="center_vertical"
+        android:text="@string/users_will_confirm_it_s_you_when_they_pick_up"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:typeface="monospace" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="16dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.10"
+            android:src="@drawable/people" />
+
+        <EditText
+            android:id="@+id/first_name"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="0.40"
+            android:hint="@string/first_name"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName"
+            android:maxLength="@integer/name_len"
+            android:paddingStart="5dp"
+            android:singleLine="true"
+            android:textSize="@dimen/font_edit_text"
+            />
+
+        <EditText
+            android:id="@+id/last_name"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="0.40"
+            android:hint="@string/last_name"
+            android:inputType="textPersonName"
+            android:paddingStart="5dp"
+            android:textSize="@dimen/font_edit_text"
+            android:maxLength="@integer/name_len"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="22dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.10"
+            android:src="@drawable/email"
+            android:tint="@color/black_text_color" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="0.90"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:paddingStart="5dp"
+            android:textSize="@dimen/font_edit_text"
+            android:maxLength="@integer/email_len"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="22dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.10"
+            android:src="@drawable/ic_lock_outline_black_24dp"
+            app:tint="@color/grey_60" />
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.90">
+
+            <EditText
+                android:id="@+id/pinView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:gravity="start|center_vertical"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:text=""
+                android:textSize="@dimen/font_edit_text" />
+
+            <ImageView
+                android:id="@+id/show_pass_btn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="8dp"
+                android:alpha=".5"
+                android:onClick="ShowHidePass"
+                android:padding="5dp"
+                android:src="@drawable/ic_visibility" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignBottom="@+id/pinView"
+                android:layout_marginHorizontal="10dp"
+                android:background="@color/colorAccent" />
+        </RelativeLayout>
+    </LinearLayout>
+    <!--city spinner-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="22dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.10"
+            android:tint="@color/grey_60"
+            app:srcCompat="@drawable/ic_location_city_black_24dp" />
+
+        <Spinner
+            android:id="@+id/city_spinner"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="0.90"
+            android:background="@drawable/edittext_background_asset"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_edit_text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="22dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.10"
+            android:tint="@color/grey_60"
+            app:srcCompat="@drawable/ccp_ic_arrow_drop_down" />
+
+        <Spinner
+            android:id="@+id/service_list"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="0.90"
+            android:background="@drawable/edittext_background_asset"
+            android:hint="@string/vehicle_model"
+            android:inputType="text"
+            android:paddingStart="5dp"
+            tools:ignore="LabelFor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="22dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.10"
+            android:tint="@color/grey_60"
+            app:srcCompat="@drawable/ic_drive_eta_black_24dp" />
+
+        <EditText
+            android:id="@+id/vmodel"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="0.90"
+            android:hint="@string/vehicle_model"
+            android:inputType="text"
+            android:maxLength="@integer/name_len"
+            android:paddingStart="5dp"
+            android:textSize="@dimen/font_edit_text"
+            tools:ignore="LabelFor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="22dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.10"
+            android:tint="@color/grey_60"
+            app:srcCompat="@drawable/ic_credit_card_black_24dp" />
+
+        <EditText
+            android:id="@+id/vnumber"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="0.90"
+            android:maxLength="@integer/name_len"
+            android:inputType="text"
+            android:paddingStart="5dp"
+            android:textSize="@dimen/font_edit_text"
+            tools:ignore="LabelFor"
+            android:hint="Vehicle Number Plate"/>
+
+    </LinearLayout>
+    <!--                    gender-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="22dp"
+            android:layout_weight="0.10"
+            android:tint="@color/grey_60"
+            app:srcCompat="@drawable/ic_gender" />
+
+        <RadioGroup
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".90"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_female"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="20dp"
+                android:checked="true"
+                android:text="Female" />
+
+            <RadioButton
+                android:id="@+id/rb_male"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Male" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/fake_id_note"
+        android:textColor="@color/red"
+        android:textSize="@dimen/font_small"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal">
+
+        <com.gotaxi.driver.Utilities.MyCheckbox
+            android:id="@+id/checkedterms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/termms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="15dp"
+            android:text="@string/i_agree_ro_the_terms_amp_conditions_and_privacy_policy"
+            android:textSize="@dimen/font_medium" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/nextBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/round_corner_primary_button"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:text="@string/signup"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_button"
+        android:visibility="visible" />
+</LinearLayout>

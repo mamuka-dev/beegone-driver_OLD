@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp"
+    app:behavior_hideable="true"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="50dp"
+                android:layout_height="5dp"
+                android:layout_gravity="center_horizontal"
+                app:cardBackgroundColor="@color/grey_40" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnrAfterAcceptedStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/_3sdp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:background="@drawable/circuler_image_back"
+                    android:id="@+id/img03Status1"
+                    android:layout_width="@dimen/circular_status_image_width"
+                    android:layout_height="@dimen/circular_status_image_height"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_marginStart="@dimen/_30sdp"
+                    android:src="@drawable/arrived" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_weight="1"
+                    android:background="@color/view_bg" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:background="@drawable/circuler_image_back"
+                    android:id="@+id/img03Status2"
+                    android:layout_width="@dimen/circular_status_image_width"
+                    android:layout_height="@dimen/circular_status_image_height"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:src="@drawable/pickup" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_weight="1"
+                    android:background="@color/view_bg" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:background="@drawable/circuler_image_back"
+                    android:id="@+id/img03Status3"
+                    android:layout_width="@dimen/circular_status_image_width"
+                    android:layout_height="@dimen/circular_status_image_height"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_marginEnd="@dimen/_30sdp"
+                    android:src="@drawable/finished" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/grey_40" />
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:paddingStart="10dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".50"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt03UserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sfd_regular"
+                    android:textColor="@color/grey_80"
+                    android:gravity="start"
+                    android:textSize="20sp" />
+
+                <com.gotaxi.driver.Utilities.MyBoldTextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:id="@+id/lblServiceRequested" />
+
+
+                <RatingBar
+                    android:id="@+id/rat03UserRating"
+                    style="?attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:progressTint="#FFCA28" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".50"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img03User"
+                    android:layout_marginEnd="20dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="end"
+                    android:background="@drawable/circule_img"
+                    android:src="@drawable/img_profile_placehodler"
+                    app:civ_shadow="true"
+                    app:civ_shadow_color="#FFFFFF"
+                    app:civ_shadow_radius="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/grey_40" />
+
+        <LinearLayout
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.80"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfd_regular"
+                android:textSize="16sp"
+                android:textColor="@color/grey_80"
+                android:text="@string/return_trip_available" />
+
+            <TextView
+                android:id="@+id/returntrip"
+                android:gravity="end"
+                android:paddingEnd="20dp"
+                android:layout_width="0dp"
+                android:layout_weight="0.20"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfd_regular"
+                android:textSize="16sp"
+                android:textColor="@color/red"
+                android:text="@string/no" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/otplayout"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:paddingStart="10dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:text="@string/enter_otp_nto_start_trip"
+                android:fontFamily="@font/sfd_regular"
+                android:textColor="@color/grey_80"
+                android:gravity="start"
+                android:textSize="20sp" />
+
+            <com.chaos.view.PinView
+                android:id="@+id/lblOTP"
+                style="@style/PinWidget.PinView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:cursorVisible="true"
+                android:inputType="number"
+                android:padding="10dp"
+                android:textColor="#222222"
+                android:textSize="18sp"
+                app:cursorColor="@color/colorPrimary"
+                app:cursorWidth="2dp"
+                app:itemCount="4"
+                app:itemHeight="48dp"
+                app:itemRadius="4dp"
+                app:itemSpacing="5dp"
+                app:itemWidth="36dp"
+                app:lineColor="@color/colorPrimary"
+                app:lineWidth="2dp"
+                app:viewType="rectangle" />
+        </LinearLayout>
+
+        <com.gotaxi.driver.Utilities.MyButton
+            android:id="@+id/btn_01_status"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:background="@drawable/round_corner_primary_button"
+            android:padding="@dimen/button_padding"
+            android:text="@string/tap_when_arrived"
+            android:textColor="@color/button_text_color" />
+
+        <LinearLayout
+            android:id="@+id/AfterAcceptButtonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_40" />
+
+            <LinearLayout
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img03Call"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="@dimen/_25sdp"
+                    android:tint="@color/colorPrimaryDark"
+                    app:srcCompat="@drawable/ic_phone_black_24dp"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/btn_sms"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="@dimen/_25sdp"
+                    app:srcCompat="@drawable/chat"
+                    android:tint="@color/colorPrimaryDark"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/btn_cancel_ride"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="@dimen/_25sdp"
+                    android:tint="@color/colorPrimaryDark"
+                    app:srcCompat="@drawable/ic_cancel_black_24dp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/call"
+                    android:fontFamily="@font/sfd_regular"
+                    android:textColor="@color/grey_80"
+                    android:gravity="center_horizontal"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chat"
+                    android:fontFamily="@font/sfd_regular"
+                    android:textColor="@color/grey_80"
+                    android:gravity="center_horizontal"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/btnCancelTriptext"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cancel"
+                    android:fontFamily="@font/sfd_regular"
+                    android:textColor="@color/grey_80"
+                    android:gravity="center_horizontal"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

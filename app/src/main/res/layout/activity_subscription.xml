@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <include layout="@layout/main_toolbar" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/lay_sub"
+            android:layout_below="@+id/toolbar_main"
+            android:scrollbars="vertical"
+            tools:listitem="@layout/item_subsc" />
+
+        <RelativeLayout
+            android:id="@+id/errorLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/error_image"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_centerHorizontal="true"
+                app:srcCompat="@drawable/ic_subsc"
+                app:tint="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/error_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sfd_regular"
+                android:text="@string/no_sub_available"
+                android:textColor="@color/black_text_color"
+                android:textSize="@dimen/font_large" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_sub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/_16sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:visibility="visible">
+
+            <Button
+                android:id="@+id/btn_subscribe"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_weight="1"
+                android:background="@drawable/round_corner_primary_button"
+                android:text="@string/str_subscribe"
+                android:textSize="@dimen/font_size_button"
+                android:visibility="visible" />
+
+            <Space
+                android:id="@+id/space"
+                android:layout_width="@dimen/_16sdp"
+                android:layout_height="match_parent"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_weight="1"
+                android:background="@drawable/round_corner_primary_button"
+                android:text="@string/cancel"
+                android:textSize="@dimen/font_size_button"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

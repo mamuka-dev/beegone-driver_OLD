@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_200sdp"
+            android:scaleType="centerCrop"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_100sdp"
+            android:src="@drawable/app_img"  />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:fontFamily="@font/sfd_regular"
+                android:gravity="center"
+                android:text="@string/explore_new_way_to_earn_with"
+                android:textSize="@dimen/font_large"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/sign_in_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_service_flow_view_4"
+                    android:gravity="center"
+                    android:text="@string/sign_in"
+                    android:textSize="@dimen/font_size_button"
+                    tools:targetApi="lollipop" />
+
+                <Button
+                    android:id="@+id/sign_up_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_service_flow_view_4"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:text="@string/signup"
+                    android:textSize="@dimen/font_size_button"
+                    tools:targetApi="lollipop" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tnc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/sfd_regular"
+                android:gravity="center"
+                android:text="@string/by_continuing_you_agree_that_you_have_read_and_accept_our_t_amp_cs_and_privacy_policy"
+                android:textSize="@dimen/font_medium" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

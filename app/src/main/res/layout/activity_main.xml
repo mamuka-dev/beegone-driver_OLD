@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/nav_header_main"
+            app:itemTextColor="@color/grey_80"
+            app:menu="@menu/activity_main_drawer"
+            app:theme="@style/NavigationDrawerStyle">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="vertical">
+
+                <include layout="@layout/h_seprator"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginBottom="@dimen/_20sdp"/>
+                <TextView
+                    android:id="@+id/drive_link"
+                    android:layout_gravity="bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="@string/get_a_ride"
+                    android:fontFamily="@font/sfd_regular"
+                    android:textColor="@color/grey_60"
+                    android:drawableStart="@drawable/ic_drive_eta_black_24dp"
+                    android:drawableTint="@color/colorPrimaryDark"
+                    android:drawablePadding="30dp"
+                    tools:targetApi="m" />
+            </LinearLayout>
+        </com.google.android.material.navigation.NavigationView>
+    </androidx.drawerlayout.widget.DrawerLayout>
+</FrameLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_color_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lnrTitle"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/text_color_white"
+            android:elevation="@dimen/_10sdp"
+            tools:ignore="UnusedAttribute">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.80"
+                android:fontFamily="@font/sfd_regular"
+                android:gravity="center"
+                android:text="@string/account_verification"
+                android:textColor="@color/black_text_color"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="90dp"
+            android:src="@drawable/app_img" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/load_anim"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:fontFamily="@font/sfd_regular"
+                android:gravity="center"
+                android:text="@string/your_account_under_review"
+                android:textColor="@color/black_text_color"
+                android:textSize="@dimen/font_x_large"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:fontFamily="@font/sfd_regular"
+                android:gravity="start"
+                android:text="@string/_1_cause_of_new_account"
+                android:textColor="@color/grey_80"
+                android:textSize="@dimen/font_large"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/resubmitDocBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/secondry_button_bg"
+                    android:gravity="center"
+                    android:text="@string/document"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_button"
+                    android:textStyle="bold"
+                    tools:targetApi="lollipop" />
+
+                <Button
+                    android:id="@+id/logoutBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/secondry_button_bg"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:text="@string/logout"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_button"
+                    android:textStyle="bold"
+                    tools:targetApi="lollipop" />
+            </LinearLayout>
+
+            <com.gotaxi.driver.Utilities.MyButton
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:layout_margin="20dp"
+                android:background="@drawable/secondry_button_bg"
+                android:onClick="paypending"
+                android:paddingStart="@dimen/button_padding"
+                android:paddingEnd="@dimen/button_padding"
+                android:paddingBottom="@dimen/button_padding"
+                android:text="@string/pay_pending_charges"
+                android:textColor="@color/button_text_color" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

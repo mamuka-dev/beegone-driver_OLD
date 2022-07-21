@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/d_name"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/black_text_color"
+            android:textSize="@dimen/font_medium"
+            android:textStyle="bold"
+            android:fontFamily="@font/sfd_regular"
+            android:layout_width="0dp"
+            android:layout_weight="0.50"
+            android:layout_height="wrap_content"
+            tools:text = "Doc Name"/>
+
+        <TextView
+            android:id="@+id/d_type"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/font_small"
+            android:textStyle="bold"
+            android:fontFamily="@font/sfd_regular"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            tools:text = "Doc Type"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/d_upload"
+            android:text="@string/upload"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:theme="@style/Button.Primary"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.25" />
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/d_done"
+            android:fontFamily="@font/sfd_regular"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="0.25"
+            android:textSize="@dimen/font_size_button"/>
+    </LinearLayout>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1px"
+    android:layout_marginStart="20dp"
+    android:background="@color/colorAccent"/>
+</LinearLayout>

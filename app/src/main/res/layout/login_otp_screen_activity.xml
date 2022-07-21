@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.LoginOtpScreen">
+    <!--toolbar-->
+    <include layout="@layout/toolbar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            app:cardCornerRadius="@dimen/_8sdp"
+            app:cardElevation="@dimen/_2sdp"
+            android:layout_centerInParent="true">
+            <ImageView
+                android:id="@+id/app_logo"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:scaleType="centerInside"
+                android:src="@drawable/app_img"  />
+        </androidx.cardview.widget.CardView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/phone_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:layout_marginBottom="8dp"
+                    app:cardElevation="@dimen/card_elevation"
+                    android:padding="20dp"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/sign_in"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                            android:textColor="@color/grey_80"
+                            android:textStyle="bold" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/edittext_background_asset"
+                            android:orientation="horizontal">
+
+<!--                            <TextView-->
+<!--                                android:layout_width="0dp"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:layout_gravity="center"-->
+<!--                                android:layout_weight="0.20"-->
+<!--                                android:gravity="center"-->
+<!--                                android:text="@string/country_code"-->
+<!--                                android:textColor="@color/black"-->
+<!--                                android:textSize="15sp" />-->
+
+                                                        <com.hbb20.CountryCodePicker
+                                                            android:id="@+id/mcpp"
+                                                            android:layout_gravity="center"
+                                                            android:visibility="visible"
+                                                            app:ccp_textSize="15sp"
+                                                            app:ccp_autoDetectCountry="false"
+                                                            app:ccp_defaultNameCode="PK"
+                                                            app:ccp_showFullName="false"
+                                                            app:ccp_showNameCode="false"
+                                                            app:ccp_showPhoneCode="true"
+                                                            app:ccp_showFlag="true"
+                                                            android:layout_weight="0.30"
+                                                            android:layout_width="0dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:layout_marginStart="5dp" />
+                            <include layout="@layout/v_seprator" />
+
+
+                            <EditText
+                                android:id="@+id/idphone"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.70"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/sfd_regular"
+                                android:gravity="start|center_vertical"
+                                android:hint="@string/phone_number"
+                                android:inputType="phone"
+                                android:padding="10dp"
+                                android:textSize="@dimen/font_edit_text"
+                                android:digits="0123456789"
+                                android:text="112233445566"
+                                android:maxLength="@integer/phone_len"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/edittext_background_asset"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="24dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.30"
+                                android:tint="@color/grey_60"
+                                app:srcCompat="@drawable/ic_lock_outline_black_24dp" />
+
+                            <include layout="@layout/v_seprator" />
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="0.70"
+                                android:layout_height="wrap_content">
+
+                                <EditText
+                                    android:id="@+id/pinView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@android:color/transparent"
+                                    android:gravity="start|center_vertical"
+                                    android:hint="@string/password"
+                                    android:inputType="textPassword"
+                                    android:padding="10dp"
+                                    android:textSize="@dimen/font_edit_text"
+                                    android:text="1122334455"/>
+
+                                <ImageView
+                                    android:id="@+id/show_pass_btn"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginEnd="8dp"
+                                    android:alpha=".5"
+                                    android:onClick="ShowHidePass"
+                                    android:padding="5dp"
+                                    android:src="@drawable/ic_visibility" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/submit"
+                            android:layout_width="match_parent"
+
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginHorizontal="@dimen/_16sdp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/round_corner_primary_button"
+                            android:paddingStart="30dp"
+                            android:paddingEnd="30dp"
+                            android:text="@string/sign_in"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_button"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/changePasswordTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/sfd_regular"
+                            android:gravity="center_horizontal"
+                            android:text="@string/str_forget_pass"
+                            android:textSize="@dimen/font_small"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+</LinearLayout>

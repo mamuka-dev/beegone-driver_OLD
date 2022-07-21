@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@+id/grp8">
+        <item
+            android:id="@+id/nav_home"
+            android:title="@string/home"
+            android:icon="@drawable/ic_home"
+            android:actionMenuTextColor="@color/colorPrimary" />
+        <item
+            android:id="@+id/nav_subscription"
+            android:title="@string/subscription"
+            android:icon="@drawable/ic_subsc"
+            android:actionMenuTextColor="@color/colorPrimary" />
+        <item
+            android:id="@+id/nav_wallets"
+            android:title="@string/wallet"
+            android:icon="@drawable/ic_wallet"
+            android:actionMenuTextColor="@color/colorAccent"
+            />
+        <item
+            android:id="@+id/nav_cards"
+            android:title="@string/manage_cards"
+            android:icon="@drawable/ic_credit_card_black_24dp"
+            android:actionMenuTextColor="@color/colorAccent"
+            android:visible="true"
+            />
+        <item
+            android:id="@+id/nav_earnings"
+            android:title="@string/earnings"
+            android:icon="@drawable/ic_payments"
+            android:actionMenuTextColor="@color/colorAccent" />
+        <item
+            android:id="@+id/nav_yourtrips"
+            android:title="@string/rides_history"
+            android:icon="@drawable/ic_history"
+            android:actionMenuTextColor="@color/colorAccent" />
+        <item
+            android:id="@+id/nav_schedule_ride"
+            android:title="@string/schedule_rides"
+            android:icon="@drawable/ic_trip_history"
+            android:actionMenuTextColor="@color/colorAccent" />
+        <item
+            android:id="@+id/nav_summary"
+            android:title="@string/summary"
+            android:icon="@drawable/ic_summary"
+            android:actionMenuTextColor="@color/colorAccent" />
+        <item
+            android:id="@+id/nav_help"
+            android:title="@string/support"
+            android:icon="@drawable/ic_support"
+            android:actionMenuTextColor="@color/colorAccent" />
+        <item
+            android:id="@+id/nav_settings"
+            android:title="@string/settings"
+            android:icon="@drawable/ic_settings"
+            android:actionMenuTextColor="@color/colorAccent" />
+    </group>
+</menu>
